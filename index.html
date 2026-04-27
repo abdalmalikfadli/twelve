@@ -2,31 +2,39 @@
 <html lang="en">
 
 <head>
-    <title>TWELVE</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>TWELVE</title>
+    <meta name="title" content="TWELVE">
+    <meta name="description" content="TWELVE Marketing Agency - Coming Soon">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://twelve-eosin.vercel.app/">
+    <meta property="og:title" content="TWELVE">
+    <meta property="og:description" content="TWELVE Marketing Agency - Coming Soon">
+    <meta property="og:image" content="https://twelve-eosin.vercel.app/assets/images/TWELVELOGO.png">
+
+    <!-- Twitter / X -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://twelve-eosin.vercel.app/">
+    <meta property="twitter:title" content="TWELVE">
+    <meta property="twitter:description" content="TWELVE Marketing Agency - Coming Soon">
+    <meta property="twitter:image" content="https://twelve-eosin.vercel.app/assets/images/TWELVELOGO.png">
+
     <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
-    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    </head>
-
-    <body>
-        <div class="w-full h-screen" style="background-image: url('assets/images/TWELVE-BG.png');">
+    <div class="w-full h-screen" style="background-image: url('assets/images/TWELVE-BG.png');">
             <div class="w-full h-screen bg-black bg-opacity-70">
                 <div
-                    class="w-full h-full flex flex-col items-start justify-between container mx-auto py-8 px-8 lg:px-4 xl:px-0">
+                    class="w-full h-full flex flex-col items-center md:items-start justify-between container mx-auto py-8 px-4 sm:px-8 lg:px-4 xl:px-0">
                     <div class="bg-white bg-opacity-90 px-4 py-2 rounded-xl flex items-center justify-center text-cyan-100 space-x-4"
                         style="background: #f9f4eabd;">
                         <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 lg:h-8 w-6 lg:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,35 +45,35 @@
                         </div>
                         <!-- <span class="text-lg lg:text-2xl font-bold">Template</span> -->
                     </div>
-                    <div class="flex-1 flex flex-col items-start justify-center">
+                    <div class="flex-1 flex flex-col items-center md:items-start justify-center w-full">
                         <h1
-                            class="text-6xl lg:text-7xl xl:text-8xl text-gray-200 tracking-wider font-bold font-serif mt-12 text-center md:text-left">
+                            class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-gray-200 tracking-wider font-bold font-serif mt-12 text-center md:text-left">
                             <!-- We Are  -->
                             <span class="text-[#3890c9]">Coming</span> Soon
                         </h1>
 
-                        <div class="mt-12 flex flex-col items-center mt-8 ml-2">
-                            <p class="text-gray-300 uppercase text-sm">Time left until lunching</p>
-                            <div class="flex items-center justify-center space-x-4 mt-4"
+                        <div class="mt-8 md:mt-12 flex flex-col items-center md:items-start ml-0 md:ml-2">
+                            <p class="text-gray-300 uppercase text-xs md:text-sm text-center md:text-left w-full">Time left until lunching</p>
+                            <div class="flex items-center justify-center space-x-1 md:space-x-4 mt-4 w-full"
                                 x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();">
-                                <div class="flex flex-col items-center px-4">
-                                    <span x-text="time().days" class="text-4xl lg:text-5xl text-gray-200">00</span>
-                                    <span class="text-gray-400 mt-2">Days</span>
+                                <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
+                                    <span x-text="time().days" class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">00</span>
+                                    <span class="text-xs md:text-sm text-gray-400 mt-2">Days</span>
                                 </div>
-                                <span class="w-[1px] h-24 bg-gray-400"></span>
-                                <div class="flex flex-col items-center px-4">
-                                    <span x-text="time().hours" class="text-4xl lg:text-5xl text-gray-200">23</span>
-                                    <span class="text-gray-400 mt-2">Hours</span>
+                                <span class="w-[1px] h-12 sm:h-16 md:h-24 bg-gray-400"></span>
+                                <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
+                                    <span x-text="time().hours" class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">23</span>
+                                    <span class="text-xs md:text-sm text-gray-400 mt-2">Hours</span>
                                 </div>
-                                <span class="w-[1px] h-24 bg-gray-400"></span>
-                                <div class="flex flex-col items-center px-4">
-                                    <span x-text="time().minutes" class="text-4xl lg:text-5xl text-gray-200">59</span>
-                                    <span class="text-gray-400 mt-2">Minutes</span>
+                                <span class="w-[1px] h-12 sm:h-16 md:h-24 bg-gray-400"></span>
+                                <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
+                                    <span x-text="time().minutes" class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">59</span>
+                                    <span class="text-xs md:text-sm text-gray-400 mt-2">Minutes</span>
                                 </div>
-                                <span class="w-[1px] h-24 bg-gray-400"></span>
-                                <div class="flex flex-col items-center px-4">
-                                    <span x-text="time().seconds" class="text-4xl lg:text-5xl text-gray-200">28</span>
-                                    <span class="text-gray-400 mt-2">Seconds</span>
+                                <span class="w-[1px] h-12 sm:h-16 md:h-24 bg-gray-400"></span>
+                                <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
+                                    <span x-text="time().seconds" class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">28</span>
+                                    <span class="text-xs md:text-sm text-gray-400 mt-2">Seconds</span>
                                 </div>
                             </div>
                         </div>
@@ -154,8 +162,4 @@
         </div>
         <script src="assets/js/timer.js"></script>
     </body>
-
-    </html>
-</body>
-
 </html>
