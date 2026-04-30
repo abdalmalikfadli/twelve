@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Primary Meta Tags -->
     <title>TWELVE</title>
     <meta name="title" content="TWELVE">
@@ -26,140 +26,149 @@
     <meta property="twitter:image" content="https://twelve-eosin.vercel.app/assets/images/TWELVELOGO.png">
 
     <link rel="icon" type="image/png" href="assets/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
-    <div class="w-full h-screen" style="background-image: url('assets/images/TWELVE-BG.png');">
-            <div class="w-full h-screen bg-black bg-opacity-70">
-                <div
-                    class="w-full h-full flex flex-col items-center md:items-start justify-between container mx-auto py-8 px-4 sm:px-8 lg:px-4 xl:px-0">
-                    <div class="bg-white bg-opacity-90 px-4 py-2 rounded-xl flex items-center justify-center text-cyan-100 space-x-4"
-                        style="background: #f9f4eabd;">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 lg:h-8 w-6 lg:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
-                    </svg> -->
-                        <div class="wrappic1 m-r-30 m-t-10 m-b-10">
-                            <a href="#"><img src="assets/images/logo.png" width="100" alt="LOGO"></a>
-                        </div>
-                        <!-- <span class="text-lg lg:text-2xl font-bold">Template</span> -->
-                    </div>
-                    <div class="flex-1 flex flex-col items-center md:items-start justify-center w-full">
-                        <h1
-                            class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-gray-200 tracking-wider font-bold font-serif mt-12 text-center md:text-left">
-                            <!-- We Are  -->
-                            <span class="text-[#3890c9]">Coming</span> Soon
-                        </h1>
+    <div id="bg-container" class="w-full h-screen bg-cover bg-center transition-all duration-1000"
+        style="background-image: url('assets/images/TWELVE-BG1.png');">
+        <div class="w-full h-screen bg-black bg-opacity-70 relative">
+            <button id="lang-toggle"
+                class="absolute top-6 right-6 bg-white bg-opacity-20 hover:bg-opacity-40 text-white font-bold py-2 px-4 rounded transition-all duration-300 backdrop-blur-sm z-50">Ar</button>
 
-                        <div class="mt-8 md:mt-12 flex flex-col items-center md:items-start ml-0 md:ml-2">
-                            <p class="text-gray-300 uppercase text-xs md:text-sm text-center md:text-left w-full">Time left until lunching</p>
-                            <div class="flex items-center justify-center space-x-1 md:space-x-4 mt-4 w-full"
-                                x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();">
-                                <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
-                                    <span x-text="time().days" class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">00</span>
-                                    <span class="text-xs md:text-sm text-gray-400 mt-2">Days</span>
-                                </div>
-                                <span class="w-[1px] h-12 sm:h-16 md:h-24 bg-gray-400"></span>
-                                <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
-                                    <span x-text="time().hours" class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">23</span>
-                                    <span class="text-xs md:text-sm text-gray-400 mt-2">Hours</span>
-                                </div>
-                                <span class="w-[1px] h-12 sm:h-16 md:h-24 bg-gray-400"></span>
-                                <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
-                                    <span x-text="time().minutes" class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">59</span>
-                                    <span class="text-xs md:text-sm text-gray-400 mt-2">Minutes</span>
-                                </div>
-                                <span class="w-[1px] h-12 sm:h-16 md:h-24 bg-gray-400"></span>
-                                <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
-                                    <span x-text="time().seconds" class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">28</span>
-                                    <span class="text-xs md:text-sm text-gray-400 mt-2">Seconds</span>
-                                </div>
+            <div
+                class="w-full h-full flex flex-col items-center justify-between container mx-auto py-8 px-4 sm:px-8 lg:px-4 xl:px-0">
+                <div class="bg-white bg-opacity-90 px-4 py-2 rounded-xl flex items-center justify-center text-cyan-100 gap-4"
+                    style="background: #f9f4eabd;">
+                    <div class="wrappic1 m-r-30 m-t-10 m-b-10">
+                        <a href="#"><img src="assets/images/logo.png" width="100" alt="LOGO"></a>
+                    </div>
+                </div>
+                <div class="flex-1 flex flex-col items-center justify-center w-full">
+                    <h1 id="main-title"
+                        class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-gray-200 tracking-wider font-bold mt-12 text-center transition-all duration-300">
+                        <span class="text-[#3890c9]">Coming</span> Soon
+                    </h1>
+
+                    <div class="mt-8 md:mt-12 flex flex-col items-center" style="display: none;">
+                        <p class="text-gray-300 uppercase text-xs md:text-sm text-center w-full">Time left
+                            until lunching</p>
+                        <div class="flex items-center justify-center gap-1 md:gap-4 mt-4 w-full"
+                            x-data="timer(new Date().setDate(new Date().getDate() + 1))" x-init="init();">
+                            <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
+                                <span x-text="time().days"
+                                    class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">00</span>
+                                <span class="text-xs md:text-sm text-gray-400 mt-2">Days</span>
+                            </div>
+                            <span class="w-[1px] h-12 sm:h-16 md:h-24 bg-gray-400"></span>
+                            <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
+                                <span x-text="time().hours"
+                                    class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">23</span>
+                                <span class="text-xs md:text-sm text-gray-400 mt-2">Hours</span>
+                            </div>
+                            <span class="w-[1px] h-12 sm:h-16 md:h-24 bg-gray-400"></span>
+                            <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
+                                <span x-text="time().minutes"
+                                    class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">59</span>
+                                <span class="text-xs md:text-sm text-gray-400 mt-2">Minutes</span>
+                            </div>
+                            <span class="w-[1px] h-12 sm:h-16 md:h-24 bg-gray-400"></span>
+                            <div class="flex flex-col items-center px-1 sm:px-2 md:px-4">
+                                <span x-text="time().seconds"
+                                    class="text-3xl sm:text-4xl lg:text-5xl text-gray-200">28</span>
+                                <span class="text-xs md:text-sm text-gray-400 mt-2">Seconds</span>
                             </div>
                         </div>
-                        <!-- <div class="flex flex-col items-center space-y-4 mt-16 px-6">
+                    </div>
+                    <!-- <div class="flex flex-col items-center space-y-4 mt-16 px-6">
                         <p class="text-gray-300 uppercase text-sm">Notify me when it's ready</p>
                         <form class="w-full flex items-center">
                             <input type="email" name="email" id="email" class="w-72 p-2 border-gray-300 focus:outline-none focus:ring-0 focus:border-gray-300 rounded-tl rounded-bl text-sm" placeholder="Email" autocomplete="off">
                             <button class="bg-blue-600 py-2 px-6 text-gray-100 border border-blue-600 rounded-tr rounded-br text-sm">Subscribe</button>
                         </form>
                     </div> -->
-                    </div>
-                    <div class="w-full flex items-center justify-center md:justify-end">
-                        <ul class="flex items-center space-x-4">
-                            <!-- Twitter X -->
-                            <li hidden>
-                                <a href="#" title="Twitter X">
-                                    <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path
-                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- واتساب -->
-                            <li>
-                                <a href="https://api.whatsapp.com/send/?phone=538788748&text&type=phone_number&app_absent=0"
-                                    target="_blank" rel="noopener noreferrer" title="WhatsApp">
-                                    <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path
-                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                                        <path
-                                            d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L0 24l6.335-1.51A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.483-5.064-1.328l-.363-.215-3.76.897.944-3.671-.237-.377A9.946 9.946 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- تيك توك -->
-                            <li>
-                                <a href="https://www.tiktok.com/@12agencysa" target="_blank" rel="noopener noreferrer"
-                                    title="TikTok">
-                                    <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path
-                                            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.16 8.16 0 0 0 4.78 1.52V6.82a4.85 4.85 0 0 1-1.01-.13z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- انستقرام -->
-                            <li>
-                                <a href="https://www.instagram.com/twelve_agency12" target="_blank"
-                                    rel="noopener noreferrer" title="Instagram">
-                                    <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- LinkedIn -->
-                            <li>
-                                <a href="https://www.linkedin.com/company/twelve-marketing-agency/" target="_blank"
-                                    rel="noopener noreferrer" title="LinkedIn">
-                                    <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path
-                                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <!-- جوجل ماب -->
-                            <li>
-                                <a href="https://maps.app.goo.gl/JA7MvbQN4MJtbNoC7" target="_blank"
-                                    rel="noopener noreferrer" title="Google Maps">
-                                    <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
-                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 0C7.802 0 4 3.403 4 7.602 4 11.8 7.469 16.812 12 24c4.531-7.188 8-12.2 8-16.398C20 3.403 16.199 0 12 0zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
+                </div>
+                <div class="w-full flex items-center justify-center md:justify-center">
+                    <ul class="flex items-center gap-4">
+                        <!-- Twitter X -->
+                        <li hidden>
+                            <a href="#" title="Twitter X">
+                                <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- واتساب -->
+                        <li>
+                            <a href="https://api.whatsapp.com/send/?phone=538788748&text&type=phone_number&app_absent=0"
+                                target="_blank" rel="noopener noreferrer" title="WhatsApp">
+                                <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                                    <path
+                                        d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.533 5.858L0 24l6.335-1.51A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.846 0-3.574-.483-5.064-1.328l-.363-.215-3.76.897.944-3.671-.237-.377A9.946 9.946 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- تيك توك -->
+                        <li>
+                            <a href="https://www.tiktok.com/@12agencysa" target="_blank" rel="noopener noreferrer"
+                                title="TikTok">
+                                <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.16 8.16 0 0 0 4.78 1.52V6.82a4.85 4.85 0 0 1-1.01-.13z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- انستقرام -->
+                        <li>
+                            <a href="https://www.instagram.com/twelve_agency12" target="_blank"
+                                rel="noopener noreferrer" title="Instagram">
+                                <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- LinkedIn -->
+                        <li>
+                            <a href="https://www.linkedin.com/company/twelve-marketing-agency/" target="_blank"
+                                rel="noopener noreferrer" title="LinkedIn">
+                                <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- جوجل ماب -->
+                        <li>
+                            <a href="https://maps.app.goo.gl/JA7MvbQN4MJtbNoC7" target="_blank"
+                                rel="noopener noreferrer" title="Google Maps">
+                                <svg class="w-8 h-8 hover:scale-110 transition duration-300" fill="#e2e8f0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0C7.802 0 4 3.403 4 7.602 4 11.8 7.469 16.812 12 24c4.531-7.188 8-12.2 8-16.398C20 3.403 16.199 0 12 0zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
 
-                    </div>
                 </div>
             </div>
         </div>
-        <script src="assets/js/timer.js"></script>
-    </body>
+    </div>
+    <script src="assets/js/timer.js"></script>
+    <script src="assets/js/language.js"></script>
+</body>
+
 </html>
